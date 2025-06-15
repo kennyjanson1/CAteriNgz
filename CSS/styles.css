@@ -1,0 +1,317 @@
+/* Common Styles */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --purple: #6a1b9a;
+    --purple-hover: #5e1387;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 6rem 0 0 0; /* Add top padding to accommodate the fixed header */
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute  ;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    font-size: 15px;
+}
+
+.logo-img {
+    width: 130px; 
+    height: auto;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+nav a {
+    margin: 0 1.5rem;
+    color: var(--black);
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 4rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    color: var(--green);
+}
+
+.language-dropdown {
+    position: relative;
+    padding-right: 5rem;
+    display: inline-block;
+}
+
+.language-dropdown .dropbtn {
+    background: none;
+    color: var(--black);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.language-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    z-index: 1;
+}
+
+.language-dropdown .dropdown-content a {
+    color: var(--black);
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+.language-dropdown .dropdown-content a:hover {
+    background-color: var(--light-color);
+}
+
+.language-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container {
+    display: grid;
+}
+
+.order-btn {
+    background-color: var(--green);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    font-size: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-left: auto;
+}
+
+.order-btn:hover {
+    background-color: var(--black);
+    transform: scale(1.05);
+}
+
+.menu-toggle button {
+    background: none;
+    border: none;
+    color: grey;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: none;
+}
+
+.menu-toggle button:hover {
+    transform: scale(1.1);
+}
+
+.img-style {
+    width: auto;
+    height: auto;
+}
+
+.hero-section {
+    position: relative;
+    margin-top: 0;
+    height: 100vh;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0.8; /* Transparency for the image */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+/* Recommendations Section */
+.recommendations {
+    padding-top: 10px;
+}
+
+.recommendations h2 {
+    font-size:4rem;
+    margin-bottom: 2rem;
+}
+
+.recommendation-items {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recommendation-items .item {
+    text-align: center;
+    margin: 1rem;
+}
+
+.recommendation-items .item:hover {
+    transform: scale(1.05); /* Optional: Slightly enlarge the item on hover */
+}
+
+.recommendation-items .item img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    margin-left: 5rem;
+    margin-right:5rem;
+    margin-bottom: 5rem;
+    object-fit: fill;
+    transition: transform 0.1s ease; /* Smooth transition for the zoom effect */
+}
+
+.recommendation-items .item img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+.recommendation-items .item p {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+/* Promo Section */
+.promo {
+    padding: 2rem 7%;
+    text-align: center;
+    background-color: var(--green);
+    color: white;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.promo h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.promo p {
+    font-size: 1.8rem;
+}
+
+/* Product Information Section */
+.product-info {
+    padding: 2rem 7%;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.product-info h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    color: var(--black);
+}
+
+.product-info p {
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    line-height: 1.6;
+}
+
+
+/* Mobile Styles */
+@media(max-width: 768px) {
+    .menu-toggle button {
+        display: block; /* Show menu toggle button on smaller screens */
+    }
+
+    nav {
+        display: flex; /* Flexbox layout */
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+        position: fixed; /* Fixed position */
+        top: 0; /* Align to the top */
+        right: -100%; /* Start off-screen to the right */
+        width: 80%; /* Take up 80% of the screen width */
+        height: 100%; /* Full height */
+        background: white; /* Background color */
+        box-shadow: var(--box-shadow); /* Box shadow for effect */
+        transition: right 0.3s ease; /* Smooth transition */
+        z-index: 1000; /* Ensure it appears on top */
+    }
+
+    nav.active {
+        right: 0; /* Slide in to the right */
+    }
+
+    nav a {
+        margin: 1rem 2rem;
+        text-align: left;
+        width: 100%;
+        border-bottom: 1px solid var(--black); /* Add separation lines */
+    }
+
+    .language-dropdown {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .order-btn {
+        display: block;
+        margin: 1.5rem 2rem;
+        text-align: left;
+        width: auto;
+    }
+}

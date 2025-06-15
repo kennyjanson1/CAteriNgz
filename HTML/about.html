@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="./CSS/aboutStyles.css">
+        <script src="script.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="../Images/image 1.png" class="logo-img" alt="Logo">
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../HTML/products.html">Products</a>
+                <a href="../HTML/testimonials.html">Testimonials</a>
+                <a href="../HTML/about.html">About Us</a>
+            </nav>
+            <div class="language-dropdown">
+                <button class="dropbtn">
+                    <span>🌐 EN ▾</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">English</a>
+                </div>
+            </div>
+            <div class="container">
+                <a href="../HTML/register.html">
+                    <button class="order-btn">Register</button>
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <button onclick="toggleNav()">☰</button>
+            </div>
+        </header>
+        
+        <section class="content">
+            <div class="large-image" data-aos="fade-up">
+                <img src="../Images/image 24.jpg" alt="Large Image">
+            </div>
+            <div class="text-image" data-aos="fade-right">
+                <div class="text">
+                    <h2>Since 2021</h2>
+                    <p>CAteriNgz is proud to be one of the trusted partners of state-owned companies and private companies in accommodating the needs of boxed rice and premium catering themed...</p>
+                </div>
+                <div class="image">
+                    <img src="../Images/image 25.webp" alt="Image 1">
+                </div>
+            </div>
+            <div class="image-text" data-aos="fade-left">
+                <div class="image">
+                    <img src="../Images/image 26.webp" alt="Image 2">
+                </div>
+                <div class="text">
+                    <h2>Quality Food</h2>
+                    <p>CAteriNgz ensures the best quality of ingredients and processing methods to ensure the freshness and nutritional quality of the products that will be served to CAteriNgz.</p>
+                </div>
+            </div>
+            <div class="text-image" data-aos="fade-right">
+                <div class="text">
+                    <h2>Punctuality</h2>
+                    <p>We dare to guarantee that every friend's order will be delivered on time and if there is a delay, we dare to provide a 100% money back guarantee.</p>
+                </div>
+                <div class="image" data-aos="fade-left">
+                    <img src="../Images/image 28.webp" alt="Image 3">
+                </div>
+            </div>
+            <div class="image-text" data-aos="fade-left">
+                <div class="image">
+                    <img src="../Images/image 29.webp" alt="Image 4">
+                </div>
+                <div class="text">
+                    <h2>Facility</h2>
+                    <p>CAteriNgz has a 5 Star Hotel Standard Kitchen with very complete and hygienic cooking facilities. This is a form of realization of CAteriNgz's commitment to provide the best for its Friends</p>
+                </div>
+            </div>
+            <div class="order-now" >
+                <button class="order-button">Order Now</button>
+            </div>
+        </section>
+
+        <!-- AOS Library -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true,
+            });
+        </script>
+    </body>
+</html>

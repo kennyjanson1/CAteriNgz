@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./Images/image 1.png" class="logo-img" alt="Logo">
+        
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="./HTML/products.html">Products</a>
+            <a href="./HTML/testimonials.html">Testimonials</a>
+            <a href="./HTML/about.html">About Us</a>
+        </nav>
+        <div class="language-dropdown">
+            <button class="dropbtn">
+                <span>🌐 EN ▾</span>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">English</a>
+            </div>
+        </div>
+        <div class="container">
+            <a href="./HTML/register.html">
+                <button class="order-btn">Register</button>
+            </a>
+        </div>
+        
+        <div class="menu-toggle">
+            <button onclick="toggleNav()">☰</button>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <img src="./Images/Image 2.png" class="img-style" alt="Healthy Catering">
+        <div class="overlay">
+            <div class="recommendations">
+                <h2>Our Lunchbox Recommendations</h2>
+                <div class="recommendation-items">
+                    <div class="item">
+                        <img src="../Images/Image 3.jpeg" alt="Lunchbox 1">
+                        <p>Chicken Namban</p>
+                    </div>
+                    <div class="item">
+                        <img src="./Images/Image 4.png" alt="Lunchbox 2">
+                        <p>Fried Rice</p>
+                    </div>
+                    <div class="item">
+                        <img src="./Images/Image 5.png" alt="Lunchbox 3">
+                        <p>Indomie Special</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Section -->
+    <section class="promo">
+        <h2>Weekend Promo</h2>
+        <p>Get 20% off on all orders this weekend! Use code: #CateringZ20</p>
+    </section>
+
+    <!-- Product Information Section -->
+    <section class="product-info">
+        <h2>About Our Product</h2>
+        <p>CAteriNgz provides a variety of healthy, delicious, and affordable lunchboxes tailored to meet your dietary needs. Whether you're looking for vegan, high-protein, or classic comfort meals, we have something for everyone.</p>
+    </section>
+</body>
+</html>
