@@ -27,6 +27,6 @@ This project was developed as an **individual assignment** for the **Human-Compu
    ```bash
    git clone https://github.com/yourusername/cateringz.git
 2. Open index.html in your browser.
-   |No dependencies or backend setup required — it's all front-end!
+   > No dependencies or backend setup required — it's all front-end!
 ## 📚 Learning Outcome
 Through this project, key lessons were gained in designing accessible interfaces, structuring static web pages effectively, and implementing basic user interactions using JavaScript.
